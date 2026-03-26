@@ -1,0 +1,1 @@
+import build.madrona_gomoku_python as madrona_gomoku_python

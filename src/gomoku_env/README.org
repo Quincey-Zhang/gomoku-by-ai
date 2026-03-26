@@ -1,0 +1,32 @@
+* Gomoku Environment
+
+This is an implementation of the Gomoku (Five in a Row) board game built on the [[https://madrona-engine.github.io/][Madrona game engine]].
+
+** Game Rules
+
+- 2 players take turns placing stones on a 15x15 board
+- First player to get 5 stones in a row (horizontal, vertical, or diagonal) wins
+- If the board fills up with no winner, the game is a draw
+
+** Observation Space
+
+- 226-dimensional vector: 225 board cells (15x15) + 1 current player indicator
+- Each cell: 0 = empty, 1 = ego stone, 2 = opponent stone
+- Observations are ego-centric (relative to the observing player)
+
+** Action Space
+
+- 225 discrete actions corresponding to board positions (row * 15 + col)
+- Invalid actions (occupied cells) are masked
+
+** Installation
+
+If you have already followed the instructions from the [[file:../../README.md][main README]], Gomoku should already be installed.
+
+** Testing
+
+#+begin_src bash
+  conda activate madrona
+  cd scripts
+  python gomoku_example.py --num-envs 32 --use-cpu
+#+end_src
