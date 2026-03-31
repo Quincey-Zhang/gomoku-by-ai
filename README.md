@@ -217,4 +217,4 @@ python server.py
 
 | model name | training parameters | training time |
 | - | - | - |
-| league_239 | num_envs: 2048 <br> num_steps: 128 <br> num_updates: 1e6 <br> learning_rate: 1e-4 <br> anneal_lr: True <br> num_minibatches: 4 <br> ent_coef: 1e-2 <br> selfplay_ratio: 0.2 <br><br> league threshold: 0.9 <br> league interval: 10 <br> save interval: 1e4 | 13h 24min |
+| league_288 | num_envs: 2048 <br> num_steps: 128 <br> num_updates: 1e6 <br> learning_rate: 1e-4 <br> anneal_lr: True <br> num_minibatches: 4 <br> ent_coef: 1e-2 <br> selfplay_ratio: 0.2 <br><br> league threshold: 0.9 <br> league interval: 10 <br> save interval: 1e4 | 14h 58min |
